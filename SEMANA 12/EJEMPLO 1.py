@@ -1,9 +1,9 @@
 # Matriz 3D que representa las temperaturas diarias
-# Primera dimensión: Ciudades (Quito, Guayaquil)
+# Primera dimensión: Ciudades (Quito, Guayaquil, Cuenca)
 # Segunda dimensión: Semanas (2 semanas)
 # Tercera dimensión: Días de la semana (7 días)
 
-# Datos ficticios de temperaturas en Quito y Guayaquil
+# Datos ficticios de temperaturas en Quito, Guayaquil y Cuenca
 temperaturas = [
     [  # Quito
         [  # Semana 1
@@ -44,11 +44,31 @@ temperaturas = [
             {"day": "Sábado", "temp": 31},
             {"day": "Domingo", "temp": 32}
         ]
+    ],
+    [  # Cuenca
+        [  # Semana 1
+            {"day": "Lunes", "temp": 15},
+            {"day": "Martes", "temp": 16},
+            {"day": "Miércoles", "temp": 17},
+            {"day": "Jueves", "temp": 14},
+            {"day": "Viernes", "temp": 15},
+            {"day": "Sábado", "temp": 18},
+            {"day": "Domingo", "temp": 19}
+        ],
+        [  # Semana 2
+            {"day": "Lunes", "temp": 16},
+            {"day": "Martes", "temp": 15},
+            {"day": "Miércoles", "temp": 16},
+            {"day": "Jueves", "temp": 14},
+            {"day": "Viernes", "temp": 17},
+            {"day": "Sábado", "temp": 18},
+            {"day": "Domingo", "temp": 18}
+        ]
     ]
 ]
 
 # Nombres de las ciudades
-ciudades = ["Quito", "Guayaquil"]
+ciudades = ["Quito", "Guayaquil", "Cuenca"]
 
 # Iterar sobre la matriz y calcular los promedios de temperatura
 for i, ciudad in enumerate(temperaturas):
